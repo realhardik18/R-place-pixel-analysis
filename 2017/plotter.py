@@ -5,7 +5,7 @@ all_colors = [[222, 16, 127], [255, 255, 255], [255, 168, 0], [0, 0, 0], [255, 6
 count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-img = Image.open('img2.png', 'r')
+img = Image.open('2017/img2.png', 'r')
 data_tups = list(img.getdata())
 data_lis = list()
 for data in data_tups:

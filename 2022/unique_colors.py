@@ -1,7 +1,7 @@
 # this file is to get all the unique colors from the file
 from PIL import Image
 
-img = Image.open('img.png', 'r')
+img = Image.open('2022/img.png', 'r')
 data_tups = list(img.getdata())
 data_lis = list()
 for data in data_tups:
