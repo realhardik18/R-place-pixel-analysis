@@ -1,11 +1,12 @@
-import cv2
-all_colors = list()
-data = cv2.imread('img.png')
-count = 0
-for segments in data:
-    for pixel_data in segments:
-        vals = list(pixel_data)
-        if vals not in all_colors:
-            all_colors.append(vals)
-print(count)
-print(set)
+from PIL import Image
+
+img = Image.open('img.png', 'r')
+data_tups = list(img.getdata())
+data_lis = list()
+for data in data_tups:
+    data_lis.append(list(data))
+unique_colors = []
+for val in data_lis:
+    if val not in unique_colors:
+        unique_colors.append(val)
+print(len(unique_colors), unique_colors)
