@@ -5,7 +5,7 @@ all_colors = [[222, 16, 127], [255, 255, 255], [255, 168, 0], [0, 0, 0], [255, 6
 count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-img = Image.open('2022/img.png', 'r')
+img = Image.open('pie ploter/img.png', 'r')
 data_tups = list(img.getdata())
 data_lis = list()
 for data in data_tups:
