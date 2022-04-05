@@ -1,3 +1,4 @@
+# this file is to get all the unique colors from the file
 from PIL import Image
 
 img = Image.open('img.png', 'r')
